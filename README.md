@@ -1,4 +1,4 @@
-# pcbExposureSystem
+# Sokoslide
 Homepage [www.mage-dev.de](http://www.mage-dev.de/)   
 Copyright (c) 2012 Vitalij Mast <mailto:vitalij-mast(at)mage-dev(dot).de>  
 License see LICENSE file
