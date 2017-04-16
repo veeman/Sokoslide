@@ -1,7 +1,7 @@
 #ifndef SPPROCONTEST15VISUALIZER_H
 #define SPPROCONTEST15VISUALIZER_H
 
-#include <QtGui/QMainWindow>
+#include <QtWidgets/QMainWindow>
 #include "ui_spprocontest15visualizer.h"
 #include "mapfileview.h"
 
@@ -10,7 +10,7 @@ class SpproContest15Visualizer : public QMainWindow
 		Q_OBJECT
 
 	public:
-		SpproContest15Visualizer(QWidget *parent = 0, Qt::WFlags flags = 0);
+		SpproContest15Visualizer(QWidget *parent = 0, Qt::WindowFlags flags = Qt::WindowFlags());
 		~SpproContest15Visualizer();
 
 		void open(const QString &fileName, int *answer = 0);

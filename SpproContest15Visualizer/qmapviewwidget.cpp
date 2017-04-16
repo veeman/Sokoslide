@@ -197,7 +197,7 @@ QMapViewWidget::~QMapViewWidget()
 }
 
 void QMapViewWidget::setMap(const QString &str) {
-	QByteArray asc = str.toAscii();
+	QByteArray asc = str.toLatin1();
 	memcpy(pMap, asc.data(), sizeof(pMap)/sizeof(char));
 	pTurnCount = 0;
 	emit turnChanged(pTurnCount);

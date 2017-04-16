@@ -71,7 +71,7 @@ MapFileView* MapFileView::open(const QString &fileName) {
 					return 0;
 
 				for (int i=0; i<16; ++i) {
-					switch (tmp.at(i).toAscii())
+					switch (tmp.at(i).toLatin1())
 					{
 						case '#':case '.':case 'r':case 'g':case 'b':case 'R':case 'G':case 'B':
 						break;
@@ -224,10 +224,10 @@ void MapFileView::save() {
 
 			for (int i=0; i<(map.at(0).size()/16); ++i) {
 				QString str = map.at(0).mid(i*16, 16);
-				file.write(str.toAscii(), 16);
+				file.write(str.toLatin1(), 16);
 				file.write("\n");
 			}
-			file.write(map.at(1).toAscii());
+			file.write(map.at(1).toLatin1());
 			if (mapList.last() != string)
 				file.write("\n");
 		}

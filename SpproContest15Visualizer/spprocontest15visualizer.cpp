@@ -8,7 +8,7 @@ const char *OPTIONS_FILE		= "./options.cfg";
 const char *OPTION_RECENT_FILES = "recentFileList";
 const int 	MAX_RECENT_FILES	= 5;
 
-SpproContest15Visualizer::SpproContest15Visualizer(QWidget *parent, Qt::WFlags flags)
+SpproContest15Visualizer::SpproContest15Visualizer(QWidget *parent, Qt::WindowFlags flags)
 	: QMainWindow(parent, flags)
 {
 	ui.setupUi(this);
